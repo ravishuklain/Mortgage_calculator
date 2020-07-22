@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <script>
+         <!--
+            function calculatePayment() {
+                var cost = 25;
+                var current_loan_balance = document.getElementById("current_loan_balance").value;
+                var remaining_number_of_months = document.getElementById("remaining_number_of_months").value;
+                var current_interest_Rate = document.getElementById("current_interest_Rate").value;
+
+                var new_loan_amount = document.getElementById("new_loan_amount").value;
+                var new_interest_rate = document.getElementById("new_interest_rate").value;
+                var new_loan_duration = document.getElementById("new_loan_duration").value;
+                var additional_payment_made = document.getElementById("additional_payment_made").value;
+
+                var totalcost = (cost * parseInt(current_loan_balance));
+
+                var total_original_payment=0
+                var total_payment_made_refinance=0
+                saving = total_payment_made_refinance - totalcost
+    
+                document.getElementById("old").innerHTML = "Payment with current interest rate: totalcost:" + totalcost;
+                document.getElementById("new").innerHTML = "The Cost isPayment with current interest rate: totalcost:" + totalcost+20;
+                document.getElementById("sav").innerHTML = "The Cost is:" + saving;
+            }
+         //-->
+      </script>
+   </head>
+
+<form>
+      <p> Current Loan Balance <input id="current_loan_balance" type = "float" name = "Current_Loan_Balance" /></p>
+      <p>  Remaining number of months <input id="remaining_number_of_months"  type = "integer" name = "Remaining_number_of_months" /></p>
+      <p> Current Interest Rate <input id="current_interest_Rate"  type = "float" name = "Current_Interest_Rate" /></p>
+      <p> New Loan Details </p>
+      <p> New Loan Amount <input  id="new_loan_amount"  type = "float" name = "New_Loan_Amount" /></p>
+      <p> New Interest Rate <input id="new_interest_rate"  type = "float" name = "New_Interest_Rate" /></p>
+      <p> New loan duration <input id="new_loan_duration"  type = "integer" name = "New_Loan_Duration" /></p>
+      <p> Additional Payment <input id="additional_payment_made"  type = "float" name = "Additional_Payment_Made" /></p>
+      <input type="button" value="calculate" onclick = "calculatePayment();" />
+</form>
+
+<!--display total cost here--> 
+<span id="old">Payment with current interest rate: totalcost</span>
+<p></p>
+<span id="new">Payment with new interest rate: totalcost</span>
+<p></p>
+<span id="sav">Savings: saving</span>
+
+
+</html>
+
+
+
+ 
